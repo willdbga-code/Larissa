@@ -60,7 +60,7 @@ function App() {
               Experiência
             </a>
             <a href="#curriculo" className="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white hover:bg-white/5 transition-all">
-              Currículo ATS
+              Currículo
             </a>
           </nav>
 
@@ -71,7 +71,7 @@ function App() {
               className="neu-button-primary px-5 py-3 text-xs md:text-sm flex items-center gap-2"
             >
               <Download size={17} />
-              Baixar PDF ATS
+              Baixar Currículo em PDF
             </button>
             <a
               href="https://wa.me/5512996543678"
@@ -105,7 +105,7 @@ function App() {
               className="neu-button-primary w-full py-3 mt-2 flex items-center justify-center gap-2"
             >
               <Download size={18} />
-              Baixar Currículo PDF
+              Baixar Currículo em PDF
             </button>
           </div>
         )}
@@ -254,14 +254,14 @@ function App() {
           </div>
         </section>
 
-        {/* CURRICULO PDF ATS SECTION */}
+        {/* CURRICULO PDF SECTION */}
         <section id="curriculo" className="neu-card p-10 md:p-16 text-center space-y-6 relative overflow-hidden">
           <div className="w-16 h-16 rounded-2xl bg-purple-600/20 text-purple-400 flex items-center justify-center mx-auto border border-purple-500/30 neu-inset">
             <FileText size={36} />
           </div>
           <div className="max-w-2xl mx-auto space-y-3">
             <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-              Baixar Currículo Otimizado em PDF
+              Baixar Currículo em PDF
             </h2>
             <p className="text-slate-300 text-base leading-relaxed">
               Documento formatado especificamente para aprovação imediata em sistemas de triagem ATS (Gupy, Solides, Workday) e leitura limpa por recrutadores.
@@ -273,7 +273,7 @@ function App() {
               className="neu-button-primary px-8 py-4 text-sm font-extrabold flex items-center gap-3 text-white shadow-xl hover:scale-105"
             >
               <Download size={20} />
-              Visualizar & Baixar PDF (A4)
+              Baixar Currículo em PDF
             </button>
           </div>
         </section>
