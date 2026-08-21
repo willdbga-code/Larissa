@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo ATS - Larissa Moreira de Oliveira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-bar no-print">
+    <div class="top-bar-container">
+      <span class="status-badge">✓ Otimizado para Robôs ATS (Gupy, Solides, Workday) e Avaliadores Humanos</span>
+      <button id="download-btn" onclick="downloadPDF()" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Baixar PDF Oficial A4
+      </button>
+    </div>
+  </div>
+
+  <div class="cv-page" id="cv-content">
+    <!-- Header -->
+    <header class="cv-header">
+      <h1 class="cv-name">LARISSA MOREIRA DE OLIVEIRA</h1>
+      <h2 class="cv-title">PROFISSIONAL DE SEGUROS | OPERAÇÕES & BACKOFFICE</h2>
+      <div class="cv-contact">
+        <span>📍 São Paulo - SP / Vale do Paraíba</span>
+        <span>📞 (12) 99654-3678</span>
+        <span>✉️ larimoreira012@gmail.com</span>
+      </div>
+    </header>
+
+    <div class="cv-divider"></div>
+
+    <!-- Resumo Profissional -->
+    <section class="cv-section">
+      <h3 class="section-title">RESUMO PROFISSIONAL</h3>
+      <p class="section-text">
+        Profissional de Seguros com sólida vivência operacional em corretoras de seguros e gestão de backoffice. Especialista em operacionalização e regulação nos segmentos de <strong>Seguros Auto</strong>, <strong>Ramos Elementares</strong>, <strong>Vida Individual e Empresarial</strong>. Domínio completo de processos ponta a ponta: cálculos, cotações, transmissão de propostas, emissão de apólices e certificados, endossos, faturamento corporativo, abertura e acompanhamento de sinistros e acionamento de assistência 24h. Excel intermediário/avançado aplicado ao controle de renovações, elaboração de comparativos técnicos e suporte de pós-venda focado em retenção de clientes.
+      </p>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section class="cv-section">
+      <h3 class="section-title">EXPERIÊNCIA PROFISSIONAL</h3>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-role-company">
+            <span class="exp-role">Auxiliar de Escritório Operacional – Seguros de Vida</span>
+            <span class="exp-company">C.I.A Empório Seguros Corretora</span>
+          </div>
+          <span class="exp-date">Mar 2026 – Jun 2026</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Atuação operacional estratégica nos ramos de <strong>Seguro de Vida Individual e Empresarial</strong>.</li>
+          <li>Realização de cálculos de prêmio, movimentações cadastrais, transmissão de propostas e acompanhamento rigoroso de emissões de apólices e certificados.</li>
+          <li>Envio e controle de faturamentos para empresas clientes, garantindo pontualidade e conciliação financeira.</li>
+          <li>Abertura, acompanhamento e regulação operacional de sinistros junto às seguradoras parceiras.</li>
+          <li>Desenvolvimento e gestão de planilhas em <strong>Excel (filtros, fórmulas e controles)</strong> para gestão de renovações e comparativos de mercado.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-role-company">
+            <span class="exp-role">Auxiliar de Escritório Operacional – Seguros Auto & Ramos Elementares</span>
+            <span class="exp-company">UYARA SEGUROS CORRETORA E ADM</span>
+          </div>
+          <span class="exp-date">Jun 2024 – Dez 2025</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Operacionalização de <strong>Seguros Auto e Ramos Elementares</strong>, executando cotações, cálculos, renovações e emissão de apólices.</li>
+          <li>Emissão e processamento de endossos (alterações de veículos, condutores e coberturas) com acompanhamento de pós-venda.</li>
+          <li>Atendimento e suporte humanizado aos segurados, com acionamento imediato de <strong>assistência 24h</strong> (guincho, socorro mecânico, troca de pneus e pequenos reparos).</li>
+          <li>Uso diário de Excel para análise de dados, acompanhamento de prazos de renovação e suporte no aumento da taxa de retenção da corretora.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div class="exp-role-company">
+            <span class="exp-role">Atendente de Atendimento e Operações</span>
+            <span class="exp-company">A.C.F. Lourenço</span>
+          </div>
+          <span class="exp-date">Dez 2020 – Mar 2022</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Atendimento direto ao cliente, resolução de dúvidas comerciais e suporte operacional diário.</li>
+          <li>Organização de estoque, controle de entradas/saídas de produtos e manutenção de padrões de qualidade e organização da loja.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Competências & Tecnologias -->
+    <section class="cv-section">
+      <h3 class="section-title">PRINCIPAIS COMPETÊNCIAS & TECNOLOGIAS</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Ramos de Seguros:</strong> Seguro Auto, Ramos Elementares, Vida Individual e Empresarial, Residencial.
+        </div>
+        <div class="skill-category">
+          <strong>Rotinas Operacionais:</strong> Cotações, Transmissão de Propostas, Emissão de Apólices, Endossos, Sinistros, Faturamento, Assistência 24h, Pós-Venda.
+        </div>
+        <div class="skill-category">
+          <strong>Tecnologia & Softwares:</strong> Excel (Planilhas, Fórmulas, Filtros, Comparativos, Tabelas), Portais de Seguradoras, Pacote Office.
+        </div>
+        <div class="skill-category">
+          <strong>Diferenciais Profissionais:</strong> Visão sistêmica de backoffice, facilidade no aprendizado de novos softwares, organização rigorosa e foco na retenção.
+        </div>
+      </div>
+    </section>
+
+    <!-- Perfil & Atitudes -->
+    <section class="cv-section">
+      <h3 class="section-title">PERFIL E ATITUDES PROFISSIONAIS</h3>
+      <p class="section-text">
+        Profissional proativa, altamente organizada e autônoma, com facilidade para rápida assimilação de novos sistemas operacionais e normativas de seguradoras. Excelente comunicação interpessoal e foco em eficiência administrativa.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById('cv-content');
+      const opt = {
+        margin:       [10, 10, 10, 10],
+        filename:     'Larissa_Moreira_Curriculo_ATS.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true, logging: false },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "curriculo-larissa-ats",
+  "version": "1.0.0",
+  "description": "Currículo Otimizado para ATS e PDF de Alto Padrão - Larissa Moreira de Oliveira",
+  "main": "generator.js",
+  "scripts": {
+    "start": "node generator.js"
+  },
+  "dependencies": {
+    "html2pdf.js": "^0.10.1",
+    "jspdf": "^2.5.1"
+  }
+}

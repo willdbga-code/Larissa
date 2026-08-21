@@ -1,0 +1,137 @@
+:root {
+  --neu-bg: #0c0e14;
+  --neu-surface: #12151f;
+  --neu-flat: #161925;
+  --neu-shadow-dark: #07080b;
+  --neu-shadow-light: #1d2233;
+  --neu-accent: #9333ea;
+  --neu-accent-glow: rgba(147, 51, 234, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--neu-bg);
+  color: #e2e8f0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Neumorphic Utility Classes */
+
+/* Extruded Neumorphic Card (Soft Raised Surface) */
+.neu-card {
+  background: var(--neu-surface);
+  box-shadow: 10px 10px 24px var(--neu-shadow-dark), -10px -10px 24px var(--neu-shadow-light);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-card:hover {
+  box-shadow: 14px 14px 30px var(--neu-shadow-dark), -14px -14px 30px var(--neu-shadow-light);
+  transform: translateY(-2px);
+}
+
+/* Inset Neumorphic Surface (Sunken / Pressed Container) */
+.neu-inset {
+  background: var(--neu-bg);
+  box-shadow: inset 6px 6px 14px var(--neu-shadow-dark), inset -6px -6px 14px var(--neu-shadow-light);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+/* Soft Neumorphic Button Base */
+.neu-button {
+  background: var(--neu-surface);
+  box-shadow: 6px 6px 14px var(--neu-shadow-dark), -6px -6px 14px var(--neu-shadow-light);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  color: #f1f5f9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.neu-button:hover {
+  box-shadow: 8px 8px 18px var(--neu-shadow-dark), -8px -8px 18px var(--neu-shadow-light);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.neu-button:active {
+  box-shadow: inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light);
+  transform: translateY(1px);
+}
+
+/* Neumorphic Accent Button (Purple Glow) */
+.neu-button-primary {
+  background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);
+  box-shadow: 6px 6px 16px var(--neu-shadow-dark), -6px -6px 16px var(--neu-shadow-light), 0 0 20px rgba(168, 85, 247, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.neu-button-primary:hover {
+  box-shadow: 8px 8px 22px var(--neu-shadow-dark), -8px -8px 22px var(--neu-shadow-light), 0 0 28px rgba(168, 85, 247, 0.55);
+  transform: translateY(-1px);
+}
+
+.neu-button-primary:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+  transform: translateY(1px);
+}
+
+/* Neumorphic Emerald Button (WhatsApp / Contact) */
+.neu-button-emerald {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  box-shadow: 6px 6px 16px var(--neu-shadow-dark), -6px -6px 16px var(--neu-shadow-light), 0 0 20px rgba(16, 185, 129, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.neu-button-emerald:hover {
+  box-shadow: 8px 8px 22px var(--neu-shadow-dark), -8px -8px 22px var(--neu-shadow-light), 0 0 28px rgba(16, 185, 129, 0.5);
+  transform: translateY(-1px);
+}
+
+.neu-button-emerald:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6);
+  transform: translateY(1px);
+}
+
+/* Neumorphic Badge */
+.neu-badge {
+  background: var(--neu-bg);
+  box-shadow: inset 3px 3px 6px var(--neu-shadow-dark), inset -3px -3px 6px var(--neu-shadow-light);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  border-radius: 9999px;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #c084fc;
+  text-transform: uppercase;
+}

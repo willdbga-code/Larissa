@@ -1,0 +1,214 @@
+/* CSS para Currículo Otimizado ATS - Larissa Moreira de Oliveira */
+
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #1e3a8a;
+  --text-color: #1e293b;
+  --muted-text: #475569;
+  --border-color: #cbd5e1;
+  --bg-light: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-color);
+  background-color: #e2e8f0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-bar {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.top-bar-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #38bdf8;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Folha A4 */
+.cv-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 24px auto;
+  background: #ffffff;
+  padding: 16mm 18mm;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 2px;
+}
+
+/* Header */
+.cv-header {
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.cv-name {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.cv-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  font-weight: 500;
+}
+
+.cv-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #1e3a8a 0%, #cbd5e1 100%);
+  margin-bottom: 16px;
+}
+
+/* Seções */
+.cv-section {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1.5px solid var(--primary-color);
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 0.88rem;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+/* Experiência */
+.experience-item {
+  margin-bottom: 12px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.exp-role {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--primary-color);
+  display: block;
+}
+
+.exp-company {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  display: block;
+}
+
+.exp-date {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted-text);
+  white-space: nowrap;
+}
+
+.exp-bullets {
+  list-style-type: square;
+  padding-left: 18px;
+  font-size: 0.86rem;
+  color: var(--text-color);
+}
+
+.exp-bullets li {
+  margin-bottom: 3px;
+}
+
+/* Competências */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  font-size: 0.86rem;
+}
+
+.skill-category {
+  background-color: var(--bg-light);
+  padding: 6px 10px;
+  border-left: 3px solid var(--accent-color);
+  border-radius: 2px;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .cv-page {
+    margin: 0;
+    padding: 12mm 15mm;
+    box-shadow: none;
+    width: 100%;
+  }
+}
