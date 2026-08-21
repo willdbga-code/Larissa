@@ -118,9 +118,6 @@ function App() {
         <section id="hero">
           <div className="neu-card p-8 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="space-y-3 max-w-3xl">
-              <span className="neu-badge">
-                <Sparkles size={14} className="inline mr-1 text-purple-400" /> Executive Soft-UI Portfolio
-              </span>
               <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight pt-2">
                 Larissa Moreira de Oliveira
               </h1>
@@ -169,9 +166,6 @@ function App() {
         {/* EXPERIENCE TIMELINE SECTION */}
         <section id="experiencia" className="neu-card p-8 md:p-14 space-y-12">
           <div className="max-w-3xl mx-auto text-center space-y-3">
-            <span className="neu-badge">
-              Trajetória Profissional
-            </span>
             <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight">
               Histórico de Atuação em Seguros
             </h2>
