@@ -20,7 +20,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleOpenPDF = () => {
-    window.open('/Curriculo/index.html', '_blank');
+    window.open('/Curriculo/Larissa_Moreira_Curriculo_ATS.pdf', '_blank');
   };
 
   return (

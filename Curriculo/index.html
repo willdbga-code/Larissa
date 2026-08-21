@@ -7,17 +7,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="top-bar no-print">
     <div class="top-bar-container">
       <span class="status-badge">✓ Otimizado para Robôs ATS (Gupy, Solides, Workday) e Avaliadores Humanos</span>
-      <button id="download-btn" onclick="downloadPDF()" class="btn-primary">
+      <a href="Larissa_Moreira_Curriculo_ATS.pdf" download="Larissa_Moreira_Curriculo_ATS.pdf" class="btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Baixar PDF Oficial A4
-      </button>
+      </a>
     </div>
   </div>
 
@@ -122,19 +121,5 @@
       </p>
     </section>
   </div>
-
-  <script>
-    function downloadPDF() {
-      const element = document.getElementById('cv-content');
-      const opt = {
-        margin:       [10, 10, 10, 10],
-        filename:     'Larissa_Moreira_Curriculo_ATS.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true, logging: false },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-      };
-      html2pdf().set(opt).from(element).save();
-    }
-  </script>
 </body>
 </html>

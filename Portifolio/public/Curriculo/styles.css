@@ -60,6 +60,7 @@ body {
   align-items: center;
   gap: 8px;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -67,25 +68,28 @@ body {
   transform: translateY(-1px);
 }
 
-/* Folha A4 */
+/* Folha A4 Fixa Sem Transbordo Lateral */
 .cv-page {
-  width: 210mm;
-  min-height: 297mm;
-  margin: 24px auto;
+  width: 100%;
+  max-width: 195mm;
+  min-height: 277mm;
+  margin: 20px auto;
   background: #ffffff;
-  padding: 16mm 18mm;
+  padding: 12mm 14mm;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   border-radius: 2px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* Header */
 .cv-header {
   text-align: left;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .cv-name {
-  font-size: 1.85rem;
+  font-size: 1.75rem;
   font-weight: 800;
   letter-spacing: -0.5px;
   color: var(--primary-color);
@@ -94,19 +98,19 @@ body {
 }
 
 .cv-title {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--accent-color);
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 10px;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
 }
 
 .cv-contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 0.85rem;
+  gap: 14px;
+  font-size: 0.82rem;
   color: var(--muted-text);
   font-weight: 500;
 }
@@ -114,59 +118,59 @@ body {
 .cv-divider {
   height: 2px;
   background: linear-gradient(90deg, #1e3a8a 0%, #cbd5e1 100%);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 /* Seções */
 .cv-section {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .section-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-bottom: 1.5px solid var(--primary-color);
-  padding-bottom: 3px;
-  margin-bottom: 10px;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
 }
 
 .section-text {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--text-color);
   text-align: justify;
 }
 
 /* Experiência */
 .experience-item {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .exp-role {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   color: var(--primary-color);
   display: block;
 }
 
 .exp-company {
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: var(--accent-color);
   display: block;
 }
 
 .exp-date {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--muted-text);
   white-space: nowrap;
@@ -174,26 +178,26 @@ body {
 
 .exp-bullets {
   list-style-type: square;
-  padding-left: 18px;
-  font-size: 0.86rem;
+  padding-left: 16px;
+  font-size: 0.83rem;
   color: var(--text-color);
 }
 
 .exp-bullets li {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 /* Competências */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 6px;
-  font-size: 0.86rem;
+  gap: 5px;
+  font-size: 0.83rem;
 }
 
 .skill-category {
   background-color: var(--bg-light);
-  padding: 6px 10px;
+  padding: 5px 8px;
   border-left: 3px solid var(--accent-color);
   border-radius: 2px;
 }
@@ -207,8 +211,9 @@ body {
   }
   .cv-page {
     margin: 0;
-    padding: 12mm 15mm;
+    padding: 10mm 12mm;
     box-shadow: none;
     width: 100%;
+    max-width: 100%;
   }
 }
