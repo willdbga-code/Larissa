@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import MorphSlider from './components/MorphSlider';
 import OptionWheel from './components/OptionWheel';
 import MagicBento from './components/MagicBento';
 import { 
@@ -16,28 +15,6 @@ import {
   Menu,
   X
 } from 'lucide-react';
-
-import hero1 from './assets/images/hero1.jpg';
-import hero2 from './assets/images/hero2.jpg';
-import hero3 from './assets/images/hero3.jpg';
-
-const heroItems = [
-  {
-    image: hero1,
-    caption: 'Larissa Moreira de Oliveira',
-    subtext: 'Profissional de Seguros | Operações & Gestão de Backoffice com sólida vivência em Auto, Ramos Elementares e Vida.'
-  },
-  {
-    image: hero2,
-    caption: 'Especialista em Gestão de Apólices & Sinistros',
-    subtext: 'Execução operacional de cálculos, cotações, faturamento empresarial, emissões e suporte em assistência 24h.'
-  },
-  {
-    image: hero3,
-    caption: 'Excelência Analítica & Retenção de Clientes',
-    subtext: 'Desenvolvimento de planilhas de controle no Excel, comparativos técnicos de mercado e acompanhamento de renovações.'
-  }
-];
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -135,11 +112,11 @@ function App() {
       </header>
 
       {/* ÁREA PRINCIPAL COM LEITURA CONFORTÁVEL & NEUMORPHISM */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-6 md:px-10 py-12 md:py-16 space-y-20">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-6 md:px-10 py-12 md:py-16 space-y-16">
         
-        {/* HERO SECTION */}
-        <section id="hero" className="space-y-8">
-          <div className="neu-card p-8 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        {/* HERO HEADER SECTION (EXECUTIVE CARD WITHOUT SLIDER IMAGE) */}
+        <section id="hero">
+          <div className="neu-card p-8 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="space-y-3 max-w-3xl">
               <span className="neu-badge">
                 <Sparkles size={14} className="inline mr-1 text-purple-400" /> Executive Soft-UI Portfolio
@@ -165,37 +142,15 @@ function App() {
               </div>
             </div>
           </div>
-
-          {/* MorphSlider Component Integration */}
-          <div className="neu-card p-4 overflow-hidden" style={{ height: '540px', position: 'relative' }}>
-            <MorphSlider
-              items={heroItems}
-              transition="melt"
-              intensity={0.55}
-              aberration={0.35}
-              drift={0.4}
-              autoplay={false}
-              overlayColor="#0c0e14"
-              duration={1.1}
-              ease="power2.inOut"
-              scale={2.4}
-              autoplayDelay={4}
-              loop
-              radius={20}
-              showCaptions
-              showControls
-              showIndicators
-            />
-          </div>
         </section>
 
         {/* OPTION WHEEL SECTION */}
-        <section id="especialidades" className="pt-4">
+        <section id="especialidades" className="pt-2">
           <OptionWheel />
         </section>
 
         {/* MAGIC BENTO GRID SECTION */}
-        <section id="bento" className="pt-4">
+        <section id="bento" className="pt-2">
           <MagicBento
             textAutoHide={true}
             enableStars
