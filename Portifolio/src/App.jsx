@@ -259,13 +259,10 @@ function App() {
           <div className="w-16 h-16 rounded-2xl bg-purple-600/20 text-purple-400 flex items-center justify-center mx-auto border border-purple-500/30 neu-inset">
             <FileText size={36} />
           </div>
-          <div className="max-w-2xl mx-auto space-y-3">
+          <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-white">
               Baixar Currículo em PDF
             </h2>
-            <p className="text-slate-300 text-base leading-relaxed">
-              Documento formatado especificamente para aprovação imediata em sistemas de triagem ATS (Gupy, Solides, Workday) e leitura limpa por recrutadores.
-            </p>
           </div>
           <div className="pt-2 flex justify-center">
             <button

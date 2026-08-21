@@ -157,12 +157,9 @@ const MagicBento = ({
             <div className="p-3 w-fit rounded-xl bg-purple-500 text-white shadow-lg shadow-purple-500/50 mb-4">
               <FileText size={26} />
             </div>
-            <h3 className="text-xl font-extrabold text-white mb-2">
+            <h3 className="text-xl font-extrabold text-white mb-4">
               Currículo em PDF
             </h3>
-            <p className="text-slate-300 text-xs md:text-sm leading-relaxed mb-4">
-              Versão em PDF de padrão executivo e leitura 100% compatível com robôs de triagem (Gupy, Solides, Workday).
-            </p>
           </div>
           <button
             onClick={triggerPDFDownload}
