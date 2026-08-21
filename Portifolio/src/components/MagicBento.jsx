@@ -82,10 +82,6 @@ const MagicBento = ({
 
       {/* Section Header */}
       <div className="relative z-20 text-center max-w-2xl mx-auto mb-10">
-        <span className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-xs font-semibold uppercase tracking-wider mb-3 border border-purple-500/30">
-          <Sparkles size={14} className="text-purple-400" />
-          Destaques de Carreira
-        </span>
         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
           Destaques de Carreira & Capacidades
         </h2>

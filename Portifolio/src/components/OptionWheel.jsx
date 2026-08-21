@@ -51,9 +51,6 @@ const OptionWheel = () => {
   return (
     <div className="neu-card p-8 md:p-12 space-y-8">
       <div className="text-center max-w-2xl mx-auto space-y-3">
-        <span className="neu-badge">
-          Navegação Neumórfica OptionWheel
-        </span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
           Especialidades & Soluções Operacionais
         </h2>
