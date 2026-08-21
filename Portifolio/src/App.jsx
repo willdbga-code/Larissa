@@ -54,7 +54,7 @@ function App() {
               Especialidades
             </a>
             <a href="#bento" className="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white hover:bg-white/5 transition-all">
-              Carreira Bento
+              Carreira
             </a>
             <a href="#experiencia" className="px-4 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white hover:bg-white/5 transition-all">
               Experiência
@@ -98,7 +98,7 @@ function App() {
           <div className="lg:hidden neu-card mx-4 my-2 p-6 flex flex-col gap-3 text-sm font-bold">
             <a href="#hero" onClick={() => setMobileMenuOpen(false)} className="py-2 px-4 rounded-xl hover:bg-white/5">Início</a>
             <a href="#especialidades" onClick={() => setMobileMenuOpen(false)} className="py-2 px-4 rounded-xl hover:bg-white/5">Especialidades</a>
-            <a href="#bento" onClick={() => setMobileMenuOpen(false)} className="py-2 px-4 rounded-xl hover:bg-white/5">Carreira Bento</a>
+            <a href="#bento" onClick={() => setMobileMenuOpen(false)} className="py-2 px-4 rounded-xl hover:bg-white/5">Carreira</a>
             <a href="#experiencia" onClick={() => setMobileMenuOpen(false)} className="py-2 px-4 rounded-xl hover:bg-white/5">Experiência</a>
             <button
               onClick={() => { setMobileMenuOpen(false); handleOpenPDF(); }}
