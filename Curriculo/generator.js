@@ -33,7 +33,7 @@ function generatePDF() {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9.5);
   doc.setTextColor(mutedText);
-  doc.text('Sao Paulo - SP / Vale do Paraiba  |  Tel: (12) 99654-3678  |  E-mail: larimoreira012@gmail.com', marginX, y);
+  doc.text('Pindamonhangaba - SP  |  Tel: (12) 99654-3678  |  E-mail: larimoreira012@gmail.com', marginX, y);
 
   y += 5;
   doc.setDrawColor(30, 58, 138);

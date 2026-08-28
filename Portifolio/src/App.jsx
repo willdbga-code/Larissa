@@ -135,7 +135,7 @@ function App() {
                 larimoreira012@gmail.com
               </a>
               <div className="neu-inset px-4 py-3 text-xs text-slate-300 font-semibold flex items-center justify-center gap-1.5">
-                <MapPin size={16} className="text-purple-400" /> São Paulo / Vale do Paraíba
+                <MapPin size={16} className="text-purple-400" /> Pindamonhangaba - SP
               </div>
             </div>
           </div>

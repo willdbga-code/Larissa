@@ -7,11 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Exclude Assets folder as per instruction
+# Exclude Assets and external image folders
 assets/
 Assets/
 **/assets/
 **/Assets/
+nix '/
+nix/
+**/nix/
 
 # Dependency directories
 node_modules/
